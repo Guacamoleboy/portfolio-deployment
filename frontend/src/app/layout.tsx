@@ -1,8 +1,11 @@
 import '@styles/styles.css';
 import '@styles/animation.css';
-import { metadata } from '@/config/metadata';
+import { metadata as siteMetadata } from '@/config/metadata';
 import { ReactNode } from 'react';
 import Preloader from '@components/util/Preloader'
+
+// Apparently layout.tsx needs this or it won't upload metadata.
+export const metadata = siteMetadata;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

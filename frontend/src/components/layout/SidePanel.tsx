@@ -2,14 +2,16 @@
 
 import Link from 'next/link';
 import Logo from '@components/animations/LogoAnimation'
+import { NavigationInterface } from '@/types/navigation';
 
-export default function SidePanel() {
+export default function SidePanel({ isOpen, toggleMenu }: NavigationInterface) {
     
     // Anchor Scroll to id="something"
     const scrollToId = (id: string) => {
         const el = document.getElementById(id);
         if (el) {
             el.scrollIntoView({});
+            if (isOpen) toggleMenu(); 
         }
     };
 
@@ -17,7 +19,7 @@ export default function SidePanel() {
 
     return (
     <>
-        <aside className="side-panel">
+        <aside className={`side-panel ${isOpen ? 'open' : ''}`}>
             
             {/* Intro Meta */}
             <div className="side-panel-meta">
@@ -61,7 +63,7 @@ export default function SidePanel() {
                         <img src="/images/portfolio/sidepanel/github.png"></img>
                     </div>
                 </Link>
-                <Link href="https://www.discord.com" target="_blank">
+                <Link href="https://www.discordapp.com/users/1431603380249301082" target="_blank">
                     <div className="side-panel-link">
                         <img src="/images/portfolio/sidepanel/discord.png"></img>
                     </div>

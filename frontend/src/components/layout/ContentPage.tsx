@@ -9,20 +9,28 @@ export default function ContentPage() {
       {/* Home Section */}
       <section id="content-home" className="content-section-home">
         <div className="content-section-home-left">
+          {/*
           <h2>
             <DynamicText words={["Unique", "Autistic", "Creative", "Passionate", "Perfectionist"]} />Developer
           </h2>
           <h2>
              & <span className="highlight">Huge Nerd</span>.
           </h2>
+          */}
+          <h2>Under Development</h2>
+          <p>Come back later...</p>
+          {/*
           <p>
             Crafting meaningful digital experiences through thoughtful design and innovative solutions. 
           </p>
           <button className="portfolio-button">Get in Touch</button>
+          */}
         </div>
         <div className="content-section-home-right">
+          {/*
           <img src="/images/portfolio/contentpage/home-illustration2-resize.png" className="home-illustration"></img>
-        </div>
+          */}
+          </div>
       </section>
 
       {/* About Section 
