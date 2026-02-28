@@ -1,71 +1,64 @@
 "use client";
 
-import DynamicText from '@libs/ui/DynamicText'
+import ConnectionDots from '../ui/ConnectionDots';
+import ConnectionDotsTwo from '../ui/ConnectionDotsTwo';
+import KnowledgeSection from '../ui/KnowledgeSection';
+import HomeSection from '../ui/HomeSection';
+import AboutSection from '../ui/AboutSection';
+import SkillSection from '../ui/SkillSection';
+import SkillSectionTwo from '../ui/SkillSectionTwo';
+import GithubSection from '../ui/GithubSection';
 
 export default function ContentPage() {
   return (
     <div className="content-page">
       
-      {/* Home Section */}
-      <section id="content-home" className="content-section-home">
-        <div className="content-section-home-left">
-          {/*
-          <h2>
-            <DynamicText words={["Unique", "Autistic", "Creative", "Passionate", "Perfectionist"]} />Developer
-          </h2>
-          <h2>
-             & <span className="highlight">Huge Nerd</span>.
-          </h2>
-          */}
-          <h2>Under Development</h2>
-          <p>Come back later...</p>
-          {/*
-          <p>
-            Crafting meaningful digital experiences through thoughtful design and innovative solutions. 
-          </p>
-          <button className="portfolio-button">Get in Touch</button>
-          */}
-        </div>
-        <div className="content-section-home-right">
-          {/*
-          <img src="/images/portfolio/contentpage/home-illustration2-resize.png" className="home-illustration"></img>
-          */}
-          </div>
-      </section>
+      <HomeSection />
 
-      {/* About Section 
-      <section id="content-about" className="content-section">
-        <h2>About</h2>
-        <p>Hej, lidt info om mig...</p>
-      </section>
+      <ConnectionDots />
+
+      <KnowledgeSection />
+
+      <ConnectionDots />
+
+      <AboutSection />
+
+      <ConnectionDotsTwo />
+
+      <SkillSection />
+
+      <ConnectionDotsTwo />
+
+      {/* 
+      <GithubSection />
       */}
 
-      {/* Resume Section
-      <section id="content-resume" className="content-section">
-        <h2>Resume</h2>
-        <p>Hej, her er mit CV...</p>
-      </section>
+      {/* 
+      <ResumeSection />
       */}
 
-      {/* Portfolio Section
-      <section id="content-portfolio" className="content-section">
-        <h2>Portfolio</h2>
-        <p>Hej, se nogle projekter her...</p>
-      </section>
+      {/* 
+      <ConnectionDotsTwo />
       */}
 
-      {/* Skills Section
-      <section id="content-skills" className="content-section">
-        <h2>Skills</h2>
-        <p>Hej, mine skills...</p>
-      </section>
+      {/* 
+      <SkillSectionTwo />
       */}
 
-      {/* Contact Section
-      <section id="content-contact" className="content-section">
-        <h2>Get in Touch</h2>
-        <p>Hej, kontakt mig her...</p>
-      </section>
+      {/* 
+      <ConnectionDotsTwo />
+      */}
+
+      {/* 
+      <PortfolioSection />
+      */}
+
+      {/* 
+      <ConnectionDots />
+      */}
+
+      {/* 
+      <ContactSection />
       */}
 
     </div>

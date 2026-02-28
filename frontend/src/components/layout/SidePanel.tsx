@@ -3,9 +3,12 @@
 import Link from 'next/link';
 import Logo from '@components/animations/LogoAnimation'
 import { NavigationInterface } from '@/types/navigation';
+import { useCurrentTime } from '@/hooks/utils/use-current-time';
 
 export default function SidePanel({ isOpen, toggleMenu }: NavigationInterface) {
     
+    const time = useCurrentTime();
+
     // Anchor Scroll to id="something"
     const scrollToId = (id: string) => {
         const el = document.getElementById(id);
@@ -24,8 +27,9 @@ export default function SidePanel({ isOpen, toggleMenu }: NavigationInterface) {
             {/* Intro Meta */}
             <div className="side-panel-meta">
                 <Logo />
-                <span>Jonas Meinert Larsen</span>
+                <span>Guacamoleboy</span>
                 <span>Hillerød, Denmark</span>
+                <span>{time || "--:--"}</span>
             </div>
 
             {/* Divider */}
@@ -39,14 +43,17 @@ export default function SidePanel({ isOpen, toggleMenu }: NavigationInterface) {
                 <button onClick={() => scrollToId("content-about")}>
                     <i className="fa fa-user"></i> About
                 </button>
+                <button onClick={() => scrollToId("content-skills")}>
+                    <i className="fa fa-code"></i> Skills
+                </button>
                 <button onClick={() => scrollToId("content-resume")}>
                     <i className="fa fa-file-text"></i> Resume
                 </button>
+                <button onClick={() => scrollToId("content-skills")}>
+                    <i className="fa fa-exchange"></i> Workflow
+                </button>
                 <button onClick={() => scrollToId("content-portfolio")}>
                     <i className="fa fa-briefcase"></i> Portfolio
-                </button>
-                <button onClick={() => scrollToId("content-skills")}>
-                    <i className="fa fa-code"></i> Skills
                 </button>
                 <button onClick={() => scrollToId("content-contact")}>
                  <i className="fa fa-envelope"></i> Get in Touch
