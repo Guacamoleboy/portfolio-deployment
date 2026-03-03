@@ -8,6 +8,8 @@ import AboutSection from '../ui/AboutSection';
 import SkillSection from '../ui/SkillSection';
 import SkillSectionTwo from '../ui/SkillSectionTwo';
 import GithubSection from '../ui/GithubSection';
+import ResumeSection from '../ui/ResumeSection';
+import PortfolioSection from '../ui/PortfolioSection';
 
 export default function ContentPage() {
   return (
@@ -21,6 +23,10 @@ export default function ContentPage() {
 
       <ConnectionDots />
 
+      <GithubSection />
+
+      <ConnectionDots />
+
       <AboutSection />
 
       <ConnectionDotsTwo />
@@ -29,29 +35,15 @@ export default function ContentPage() {
 
       <ConnectionDotsTwo />
 
-      {/* 
-      <GithubSection />
-      */}
-
-      {/* 
       <ResumeSection />
-      */}
 
-      {/* 
       <ConnectionDotsTwo />
-      */}
 
-      {/* 
       <SkillSectionTwo />
-      */}
 
-      {/* 
       <ConnectionDotsTwo />
-      */}
 
-      {/* 
       <PortfolioSection />
-      */}
 
       {/* 
       <ConnectionDots />

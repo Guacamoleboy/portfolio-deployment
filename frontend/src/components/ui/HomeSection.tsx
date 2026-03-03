@@ -9,7 +9,7 @@ export default function HomeSection() {
       
       <div className="content-section-home-left">
         <h2 className="underline-left">
-          Molding Ripe Ideas with Smooth Execution
+          Molding ripe ideas with smooth execution
         </h2>
 
         <p className="home-intro-catch-phrase">
@@ -44,7 +44,7 @@ export default function HomeSection() {
 
           <span className="intro-footer">
             <span className="footer-outro">
-              Just don’t ask me about my brown spots – we all have some
+              Just don’t ask me about my brown spots
             </span>
             <span className="dot-step-1">.</span>
             <span className="dot-step-2">.</span>

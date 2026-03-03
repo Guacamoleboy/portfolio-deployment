@@ -6,13 +6,6 @@ import AboutLottie from '@components/animations/SectionAbout';
 const AboutMe = () => (
   <div className="about-me-button-on">
     <h2 className="underline-left">I'm Jonas!</h2>
-    <p>Unique (Slightly autistic) developer located in Denmark.</p>
-    <p>Started programming at a very early age. Went to College where I transformed my knowledge into real use. Made simple Java Applications & PHP / MySQL sites. Moved on to making Web Solutions for real Businesses.</p>
-    <p>Took a break from "coding" to study Real Estate in Denmark. Left as my path in life is destined to be Coding related.</p>
-    <p>Well known Counter Strike mapper featured on Live Streams, ESL & played by millions of players all over the world.</p>
-    <p>Made maps with REZ & roamed with major esport orgs such as: NIP, FaZe Clan, Team Liquid, Vitality etc.</p>
-    <p>For privacy reasons my Counter Strike name will be [REDACTED].</p>
-    <p>Currently trying my best to become an efficient & skilled Full Stack Developer with focus on UX & Generic Backend solutions.</p>
     <p><br/>Stay tuned...</p>
   </div>
 );

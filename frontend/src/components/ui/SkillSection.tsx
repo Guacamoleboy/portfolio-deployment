@@ -3,18 +3,18 @@ import type { Skill } from 'types/skill';
 
 export default function SkillSection() {
   const backendSkills: Skill[] = [
-    { name: "SSH / Terminal", value: 9.0 },
-    { name: "Architecture", value: 9.7 },
-    { name: "Databases", value: 9.5 },
-    { name: "APIs & Endpoints", value: 9.1 },
-    { name: "Cyber Security", value: 9 },
+    { name: "SSH / Terminal", value: 8.1 },
+    { name: "Architecture", value: 9.0 },
+    { name: "Databases", value: 8.9 },
+    { name: "APIs & Endpoints", value: 7.9 },
+    { name: "Cyber Security", value: 8.1 },
     { name: "Debugging", value: 7.2 },
   ];
 
   const frontendSkills: Skill[] = [
-    { name: "UI", value: 9.7 },
-    { name: "Figma", value: 7.0 },
-    { name: "UX", value: 9.5 },
+    { name: "UI", value: 9.1 },
+    { name: "Figma", value: 7.5 },
+    { name: "UX", value: 8.9 },
     { name: "Animations", value: 5.5 },
     { name: "Custom Assets", value: 8.1 },
     { name: "Creativity", value: 9.2 },

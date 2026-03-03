@@ -36,9 +36,17 @@ export default function SkillBar({ skill }: { skill: Skill }) {
     return (
     <div className="skills-showcase-entry">
         <span className="skill-name">{skill.name}</span>
+
         <span className="skill-bar-background">
-        <span ref={fillRef} className="skill-bar-fill" style={{ width: 0 }} />
+            <span 
+                ref={fillRef} 
+                className="skill-bar-fill"
+                style={{ width: 0 }}
+            />
         </span>
+
+        <span className="skill-tooltip">{skill.value.toFixed(1)} / 10</span>
+
     </div>
     );
 
