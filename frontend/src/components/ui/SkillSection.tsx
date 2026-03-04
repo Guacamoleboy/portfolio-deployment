@@ -2,22 +2,23 @@ import SkillBar from '@components/util/SkillBar';
 import type { Skill } from 'types/skill';
 
 export default function SkillSection() {
+
   const backendSkills: Skill[] = [
-    { name: "SSH / Terminal", value: 8.1 },
-    { name: "Architecture", value: 9.0 },
-    { name: "Databases", value: 8.9 },
-    { name: "APIs & Endpoints", value: 7.9 },
-    { name: "Cyber Security", value: 8.1 },
-    { name: "Debugging", value: 7.2 },
+    { name: "SSH / Terminal", value: 8.1, icon: "fa-terminal" },
+    { name: "Architecture", value: 9.0, icon: "fa-sitemap" },
+    { name: "Databases", value: 8.9, icon: "fa-database" },
+    { name: "APIs & Endpoints", value: 7.9, icon: "fa-plug" },
+    { name: "Cyber Security", value: 8.1, icon: "fa-shield" },
+    { name: "Debugging", value: 7.2, icon: "fa-bug" },
   ];
 
   const frontendSkills: Skill[] = [
-    { name: "UI", value: 9.1 },
-    { name: "Figma", value: 7.5 },
-    { name: "UX", value: 8.9 },
-    { name: "Animations", value: 5.5 },
-    { name: "Custom Assets", value: 8.1 },
-    { name: "Creativity", value: 9.2 },
+    { name: "UI", value: 9.1, icon: "fa-object-group" },
+    { name: "Figma", value: 7.5, icon: "fa-pencil-square-o" },
+    { name: "UX", value: 8.9, icon: "fa-users" },
+    { name: "Animations", value: 5.5, icon: "fa-film" },
+    { name: "Custom Assets", value: 8.1, icon: "fa-picture-o" },
+    { name: "Creativity", value: 9.2, icon: "fa-lightbulb-o" },
   ];
 
   return (

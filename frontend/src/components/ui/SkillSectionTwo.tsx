@@ -2,22 +2,23 @@ import SkillBar from '@components/util/SkillBar';
 import type { Skill } from 'types/skill';
 
 export default function SkillSectionTwo() {
+
   const deploymentSkills: Skill[] = [
-    { name: "CI / CD", value: 8.2 },
-    { name: "Docker & Containers", value: 6.6 },
-    { name: "Server management", value: 8.8 },
-    { name: "Logging", value: 5.1 },
-    { name: "Monitoring Systems", value: 7.6 },
-    { name: "Backup & Recovery", value: 9.1 },
+    { name: "CI / CD", value: 8.2, icon: "fa-refresh" },
+    { name: "Docker & Containers", value: 6.6, icon: "fa-cube" },
+    { name: "Server management", value: 8.8, icon: "fa-server" },
+    { name: "Logging", value: 5.1, icon: "fa-file-text-o" },
+    { name: "Monitoring Systems", value: 7.6, icon: "fa-line-chart" },
+    { name: "Backup & Recovery", value: 9.1, icon: "fa-history" },
   ];
 
   const teamworkSkills: Skill[] = [
-    { name: "Pair Programming", value: 8.7 },
-    { name: "Code Reviews", value: 9.4 },
-    { name: "Agility", value: 8.7 },
-    { name: "Collaboration", value: 5.6 },
-    { name: "Mentoring", value: 8.7 },
-    { name: "Project Planning", value: 9.2 },
+    { name: "Pair Programming", value: 8.7, icon: "fa-exchange" },
+    { name: "Code Reviews", value: 9.4, icon: "fa-code-fork" },
+    { name: "Agility", value: 8.7, icon: "fa-bolt" },
+    { name: "Collaboration", value: 5.6, icon: "fa-handshake-o" },
+    { name: "Mentoring", value: 8.7, icon: "fa-graduation-cap" },
+    { name: "Project Planning", value: 9.2, icon: "fa-tasks" },
   ];
 
   return (

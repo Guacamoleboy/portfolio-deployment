@@ -35,8 +35,7 @@ export default function SkillBar({ skill }: { skill: Skill }) {
 
     return (
     <div className="skills-showcase-entry">
-        <span className="skill-name">{skill.name}</span>
-
+        <span className="skill-name"><i className={`fa ${skill.icon}`}/>{skill.name}</span>
         <span className="skill-bar-background">
             <span 
                 ref={fillRef} 
