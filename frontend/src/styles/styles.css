@@ -296,7 +296,7 @@ p {
     text-align: left;
     transition: background 0.2s;
     border-radius: var(--guac-border-radius);
-    text-shadow: 1.5px 1.5px 0px #2a2a2a; 
+    text-shadow: 1.5px 1.5px 0px #484848; 
     font-weight: 600;
     letter-spacing: 0.5px;
 }
